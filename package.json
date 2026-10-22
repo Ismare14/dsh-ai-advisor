@@ -1,0 +1,46 @@
+{
+  "name": "@ismare14/dsh-ai-advisor",
+  "version": "1.0.1",
+  "description": "Gestor de modelos de IA para DeepSeek Harness: catálogo de modelos, API Keys protegidas y un asesor que recomienda el modelo ideal (mejor, equilibrado o económico) para cada tarea.",
+  "private": false,
+  "license": "MIT",
+  "author": "Ismael Muñoz Reyes <ismael.muoaz.rey@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ismare14/dsh-ai-advisor.git"
+  },
+  "engines": {
+    "dsh": ">=0.2.1-rc.2 <0.3.0"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "exports": {
+    ".": "./dist/index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepare": "npm run build",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "poc": "node test/poc-runner.ts",
+    "test": "node test/poc-runner.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

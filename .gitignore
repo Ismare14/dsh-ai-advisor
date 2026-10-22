@@ -1,0 +1,14 @@
+# Dependencias
+node_modules/
+
+# Build generado (se reconstruye con npm run build / prepare)
+dist/
+
+# Datos sensibles: el archivo de llaves NUNCA se sube
+ai_advisor_keys.json
+*.keys.json
+
+# Sistema y temporales
+.DS_Store
+Thumbs.db
+*.log

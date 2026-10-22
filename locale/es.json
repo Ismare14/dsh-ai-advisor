@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Asesor de modelos IA",
+    "description": "Catálogo de modelos de IA, API Keys protegidas y comando /advisor que recomienda el mejor modelo (mejor, equilibrado o económico) para cada tarea, más la herramienta select_model."
+  }
+}

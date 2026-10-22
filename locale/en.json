@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "AI Advisor — model router",
+    "description": "Catalog of AI models, protected API keys, and a /advisor command that recommends the best model (top, balanced, or cheap) for each task, plus a select_model tool."
+  }
+}

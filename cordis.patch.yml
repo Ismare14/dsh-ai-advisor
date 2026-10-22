@@ -1,0 +1,7 @@
+- insert:
+    - id: ai-advisor
+      name: '@ismare14/dsh-ai-advisor'
+      config:
+        enabled: true
+        keysPath: ''
+        defaultEffort: 'medium'
